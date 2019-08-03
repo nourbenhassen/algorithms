@@ -1,8 +1,6 @@
 function hoursAttended (attended, length) {
   
-  if (Number(attended) <= Number(length) && isStrOrNb(attended, length) && zeroOrHigher(attended, length) && isWholeNumber(attended, length) && attended !== "" && length !== "")
-    return true;
-  else return false;
+  return (Number(attended) <= Number(length) && isStrOrNb(attended, length) && zeroOrHigher(attended, length) && isWholeNumber(attended, length) && attended !== "" && length !== "");
     
     function isWholeNumber (var1, var2) {
       if(Number(var1) === Math.round(Number(var1)) && Number(var2) === Math.round(Number(var2)))
